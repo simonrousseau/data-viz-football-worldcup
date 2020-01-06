@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <button v-if="detailsDisplayed" id="back" type="button" class="btn btn-primary" @click="back()">Back</button>
-        <Chart v-if="!detailsDisplayed" :chartdata="datacollection" :options="options" :width="1200" :height="600"/>
+        <Chart v-if="!detailsDisplayed" :chartdata="datacollection" :options="options" :width="1200" :height="600" id="chart"/>
         <Teams v-if="detailsDisplayed" :team="selectedCountry" :players="players" />
     </div>
     
@@ -108,5 +108,8 @@ export default {
   position: relative;
   height: 80vh;
   width: 100%
+}
+#chart{
+  margin-top: 20px;
 }
 </style>
