@@ -113,7 +113,7 @@ export default {
   height: 80vh;
   width: 100%
 }
-#chart{
+#fifaRank{
   margin-top: 20px;
 }
 </style>
