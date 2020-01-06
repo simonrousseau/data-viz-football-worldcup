@@ -114,6 +114,6 @@ export default {
   width: 100%
 }
 #fifaRank{
-  margin-top: 20px;
+  margin-top: 100px;
 }
 </style>
