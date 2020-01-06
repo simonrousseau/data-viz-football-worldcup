@@ -1,7 +1,11 @@
 <template>
     <div class="container">
         <button v-if="detailsDisplayed" id="back" type="button" class="btn btn-primary" @click="back()">Back</button>
-        <Chart v-if="!detailsDisplayed" :chartdata="datacollection" :options="options" :width="1200" :height="600" id="chart"/>
+        <div id="fifaRank" v-if="!detailsDisplayed">
+          <h2>Fifa Rank:</h2>
+          <i>click on a team bar to display more information</i>
+          <Chart  :chartdata="datacollection" :options="options" :width="1200" :height="600" id="chart"/>
+        </div>
         <Teams v-if="detailsDisplayed" :team="selectedCountry" :players="players" />
     </div>
     
